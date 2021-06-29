@@ -20,7 +20,7 @@ def getCoins():
             'message': 'Error code: {}'.format(content['message'])
         }), 500
 
-    data = []  # On initialise une liste vide
+    data = []
     for coin in content:
         url = path + 'coin?id=' + coin['id']
         data.append(
