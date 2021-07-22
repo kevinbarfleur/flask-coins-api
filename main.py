@@ -40,7 +40,6 @@ def getCoins():
 
 @app.route('/coin/')
 def getCoin():
-
     coin = request.args.get('id')
     URL = 'https://static.coinpaper.io/api/coins/{}.json'.format(coin)
 
